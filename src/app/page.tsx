@@ -29,7 +29,7 @@ export default function Home() {
         welcoming dining and lounge area. We can&apos;t wait to see you soon!
       </p>
       <div className="flex justify-center items-center pb-4">
-        <InstagramFeed accessToken='IGQWRQRXh1aG1TOGZArQUpYRnFGVU5aT3EweW51M2xZAQXI1dWZAZAYi1adkl6T0h3aWZAyYVR4a0ljYVF4MlhXRUE2ellOOWMxNkp5d0NjWkVVb3RRc0phTVN0TXdOMF94UzJZAWlNDbzExUUNUUQZDZD' />
+        <InstagramFeed accessToken='IGQWRQb01XTDlMcGl5M1N5amNkbklPdTRpaHV6N2NIVnlkRldKUTlELUxIb2kzbnhDeVhvUjE0aHBuTFY2bzlNUXY1S2haUVc5djZAZAVkhZAb3c4MHYzWWl1aWt5Y3JWNW53N1VXSWthRENyZAwZDZD' />
       </div>
     </>
   );
