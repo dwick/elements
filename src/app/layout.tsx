@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Link from 'next/link'
 import './globals.css';
 import Logo from '@/components/Logo';
+import Image from '@/components/Image';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,26 +27,26 @@ export default function RootLayout({
         <header className='sticky top-0 z-50 shadow-sm'>
           <nav className='bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800'>
             <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
-              <a href='/' className='flex items-center'>
+              <Link href='/' className='flex items-center'>
                 <Logo width={200} height={60} />
-              </a>
+              </Link>
               <div
                 className='hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1'
                 id='mobile-menu-2'>
                 <ul className='flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0'>
                   <li>
-                    <a
+                    <Link
                       href='/menu'
                       className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'>
                       Menu
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href='/catering'
                       className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700'>
                       Catering
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -73,13 +75,19 @@ export default function RootLayout({
                 </p>
                 <div className='flex flex-row'>
                   <a href="https://www.instagram.com/elements_tahoe/" className="mt-4 lg:mt-0 px-2">
-                    <img src="/insta.webp" alt="Instagram" className="w-6 h-6" />
+                    <div className="w-6 h-6 relative">
+                      <Image src="/insta.webp" alt="Instagram" fill />
+                    </div>
                   </a>
                   <a href="https://www.facebook.com/elements_tahoe/" className="mt-4 lg:mt-0 px-2">
-                    <img src="/fb.webp" alt="Facebook" className="w-6 h-6" />
+                    <div className="w-6 h-6 relative">
+                      <Image src="/fb.webp" alt="Facebook" fill />
+                    </div>
                   </a>
                   <a href="https://www.tiktok.com/elements_tahoe/" className="mt-4 lg:mt-0 px-2">
-                    <img src="/tiktok.webp" alt="TikTok" className="w-6 h-6" />
+                    <div className="w-6 h-6 relative">
+                      <Image src="/tiktok.webp" alt="TikTok" fill />
+                    </div>
                   </a>
                 </div>
               </div>
