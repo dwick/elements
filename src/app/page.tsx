@@ -26,7 +26,7 @@ export default function Home() {
         delicious drinks, and tons of fun. Relish the scenic beauty of the lake as you 
         savor our handmade tortillas or  unwind at the bar with expertly crafted beverages
         and chilled beers. Always expect warm hospitality, breathtaking views, and a 
-        welcoming dining and lounge area. We can't wait to see you soon!
+        welcoming dining and lounge area. We can&apos;t wait to see you soon!
       </p>
       <div className="flex justify-center items-center pb-4">
         <InstagramFeed accessToken='IGQWRQRXh1aG1TOGZArQUpYRnFGVU5aT3EweW51M2xZAQXI1dWZAZAYi1adkl6T0h3aWZAyYVR4a0ljYVF4MlhXRUE2ellOOWMxNkp5d0NjWkVVb3RRc0phTVN0TXdOMF94UzJZAWlNDbzExUUNUUQZDZD' />

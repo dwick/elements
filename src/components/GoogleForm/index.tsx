@@ -23,7 +23,7 @@ export default function GoogleForm({
   }, [action]);
   return (
     <form onSubmit={handleSubmit} target='_blank'>
-      { submitted ? <p>Thanks for contacting us! If you don't hear back within 48 hours please give us a call at (530) 650-9004.</p> : children }
+      { submitted ? <p>Thanks for contacting us! If you don&apos;t hear back within 48 hours please give us a call at (530) 650-9004.</p> : children }
     </form>
   )
 }
