@@ -36,7 +36,7 @@ export default function InstagramFeed({ accessToken }: Props) {
     async function loadFeed() {
       const resp = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink,children{media_url}&limit=20&access_token=${accessToken}`);
       const json: { data: Post[] } = await resp.json();
-      setFeed(json.data);
+      setFeed(json.data ?? []);
     }
 
     loadFeed();
