@@ -12,7 +12,7 @@ export default function Catering() {
       >
         <h1 className="text-2xl">Catering</h1>
         <p className="text-slate-500">
-          Share your specific requirements, including the date, number of people, and on-site or off-site preferences using the form below. Our Catering Staff will promptly reach out to you.
+          Share your specific requirements, including the date, number of people, and on-site or off-site preferences using the form below. Our Catering Staff will promptly reach out to you!
         </p>
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">
